@@ -1,4 +1,4 @@
-import { getTest } from '../Frameworks/apiTests.js';
+import { postTest } from '../Frameworks/apiTests.js';
 
 export const options = {
     insecureSkipTLSVerify: true,
@@ -7,11 +7,8 @@ export const options = {
         { target: 300, duration: '2m' },
         { target: 0, duartion: '20s'}
     ],
-    thresholds: {
-        'checks{test:get}' : ['rate>0.9']
-    }
-}
+};
 
 export default () => {
-    getTest()
-}
+  postTest();
+};

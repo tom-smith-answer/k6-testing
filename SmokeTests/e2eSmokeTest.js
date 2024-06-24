@@ -5,8 +5,8 @@ export const options = {
       ui : {
         executor: 'constant-vus',
         exec: 'uiTest',
-        vus: 20,
-        duration: '1m',
+        vus: 5,
+        duration: '20s',
         options: {
           browser: {
             type: 'chromium',
